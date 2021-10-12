@@ -38,3 +38,39 @@ git branch -D dev
 # To remove branch from remote 
 git push origin :dev
 
+
+
+#####create and add tag 
+git tag -a v1.4 -m "Tage version 1.4"
+
+git push origin --tags
+
+### Delete tag locally and remotely.
+
+##locally:
+git tag -d v1.4 
+
+##remotly:
+
+git push origin --delete v1.4
+
+
+README.md file. Add image at the end of README.md file
+ code .
+(code read me on visual studio&save)
+git checkout main 
+git add .
+git commit -m "add README file"
+git push origin main
+ mkdir imgs
+## add image to folder
+git add .
+git commit -m "add img "
+git push origin main
+
+
+## add image link to README file)
+git add .
+git commit -m "add img to read me "
+git push origin main
+
