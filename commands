@@ -1,0 +1,24 @@
+
+
+mkdir newrepo2
+cd newrepo2
+git init 
+touch file1 file2 commands
+vim commands 
+git branch dev
+git branch test
+git branch
+git checkout master
+
+git add . 
+git command -m "Some New Files"
+git remote add origin LINK
+git push origin master
+
+### To remove branch locally 
+git branch -D dev 
+
+
+# To remove branch from remote 
+git push origin :dev
+
