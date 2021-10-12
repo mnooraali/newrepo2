@@ -1,0 +1,119 @@
+7___
+	sudo passwd -x 30 islam
+	//for sure:: sudo chage -l islam
+
+
+
+
+13___
+	mkdir myteam
+	ls -ld myteam
+	sudo chmod u=r myteam
+	ls -ld myteam
+
+
+
+14___
+	su - islam
+	//Enter Pass Islam
+
+
+
+15___
+	الحل:: Permission Denied
+	...........................................
+	الاول هغيرها للمستخدم يقدر يكتب فيها تاني عشان هي مقفوله عندي
+	sudo chmod u=rwx myteam
+	ls -ld myteam
+	cd myteam
+
+
+
+16___
+	1__ touch oldpasswd
+	    ls -ld oldpasswd
+	    sudo chmod u=rw,g=wx,o=x oldpasswd     //الطريقه الاولي
+	    sudo chmod 631 oldpasswd	          //الطريقه التانيه
+	    ls -ld oldpasswd
+
+
+	2__ umask 146 
+	    touch oldpasswd
+	
+
+	3__ directory => u=rwx,g=rwx,o=rwx
+	    file      => u=rw,g=rw,o=rw
+ 		
+	   
+
+	4__ umask 777 
+	    touch aya
+
+	
+
+
+
+17___ 
+	1__ cp -R rx wx
+
+	2__ cp r wx
+
+	3__ chmod 000 myfile
+	    rm myfile
+
+	4__ cd => x
+
+	5__ ls => r
+
+	6__ cat => r
+
+	7__ modify file content => w
+
+
+18___
+	touch newfile
+	ls -l newfile
+	vi newfile
+	//كان بيكتب تعديل بس فيه رساله تحذير تحت
+	//مش هيقدر يعدل عندي خالص... عشان هو read only
+
+	rm newfile
+	Yes,
+	It's deleted
+
+	//الحل
+	مش هيقدر يعدل في الملف بس هيقدر يحذفه من عندي
+
+
+19___
+	Excute on files means the right to execute them.
+	       for directories, execute permission allows you to enter the directory (i.e., cd into it), and to access any of its files.
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+1___
+	touch mycv
+	vi mycv
+
+
+2___ 
+	1_ Enter + J
+	2_ Enter + K
+	3_ /age
+	4_:5
+	5_ dd
+	   5d
+
+	6_ A
+	
+	
+
+
+
+
+
+	
+
+
+
