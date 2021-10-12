@@ -15,6 +15,22 @@ git command -m "Some New Files"
 git remote add origin LINK
 git push origin master
 
+## I've added two branches dev & test 
+git branch dev 
+git branch test 
+git branch 
+git checkout dev 
+touch file1 file2
+git add .
+git commait -m "------"
+git push origin dev 
+git checkout test 
+touch file5
+vim file5
+git add file5
+git commit -m "$$$$$"
+git push origin test
+
 ### To remove branch locally 
 git branch -D dev 
 
